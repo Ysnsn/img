@@ -1,0 +1,331 @@
+function Main()
+  SN=gg.choice({
+  "加速开启",
+  "加速关闭",
+  "m4伤害",
+  "ak伤害",
+  "scar伤害",
+  "m4a16伤害",
+  "午后防抖聚点",
+  "自瞄全屏",
+  "小范围 危",
+  "加速防拉回",
+  "全枪伤害",
+  "秒落地",
+  "天线",
+  "上帝视角",
+  "大范围 危",
+  "退出脚本",
+ },2020,"进程内存不能超过480mb否则会崩溃或者闪退")
+   if SN == 1 then
+     a()
+   end
+   if SN == 2 then
+     b()
+   end
+   if SN == 3 then
+     c()
+   end
+   if SN == 4 then
+     d()
+   end
+   if SN == 5 then
+     e()
+   end
+   if SN == 6 then
+     f()
+   end
+   if SN == 7 then
+     g()
+   end
+   if SN == 8 then
+     h()
+   end   
+   if SN == 9 then
+     i()
+   end
+   if SN == 10 then
+     j()
+   end
+   if SN == 11 then
+     k()
+   end
+   if SN == 12 then
+     l()
+   end
+   if SN ==13 then
+     m()
+   end
+   if SN == 14 then
+     n()
+   end
+   if SN == 15 then
+     o()
+   end
+   if SN == 16 then
+     Exit()
+   end
+   XGCK = -1
+   end
+
+
+function a()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1,296,744,149,883,614,555", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99)
+gg.editAll(" -1,296,744,153,870,237,696", gg.TYPE_QWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1,904,987,454,010,553,855", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99)
+gg.editAll("-1,904,987,454,002,165,247", gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("全局加速不拉回开启")
+end
+
+function b()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber( "-1,296,744,153,870,237,696", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99)
+gg.editAll(" -1,296,744,149,883,614,555", gg.TYPE_QWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1,904,987,454,002,165,247", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(99)
+gg.editAll("-1,904,987,454,010,553,855", gg.TYPE_QWORD)
+gg.clearResults()
+gg.toast("全局加速不拉回关闭")
+end
+
+function c()
+gg.clearResults()
+gg.setRanges (gg.REGION_ANONYMOUS) 
+gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("88000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("35000", gg.TYPE_FLOAT)
+gg.toast("M4伤害已部署")
+end
+
+function d()
+gg.clearResults()
+gg.setRanges (gg.REGION_ANONYMOUS)
+gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("71500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("35000", gg.TYPE_FLOAT)
+gg.toast("AKM伤害已部署")
+end
+
+function e()
+gg.clearResults()
+gg.setRanges (gg.REGION_ANONYMOUS)
+gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("87000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("35000", gg.TYPE_FLOAT)
+gg.toast("SCAR伤害已部署")
+end
+
+function f()
+gg.clearResults()
+gg.setRanges (gg.REGION_ANONYMOUS)
+gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("90000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("35000", gg.TYPE_FLOAT)
+gg.toast("M16伤害已部署")
+end
+
+function g()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('-2.786982e28;-3.7444097e28;-1.1368837e-13::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('-3.7444097e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll('0', gg.TYPE_FLOAT)
+gg.toast("无后已部署")
+
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('-2.8111605e28;-3.7444097e28;-1.1144502e28;128.0::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('-1.1144502e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll('0', gg.TYPE_FLOAT)
+gg.toast("半防抖已部署")
+
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('-6.1549454e27;1.8638966e-20;-1.1144502e28;0::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('-1.1144502e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll('0', gg.TYPE_FLOAT)
+gg.toast("防抖已部署")
+
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber('-1.2382424e28;-1.4239333e28;-1.1144502e28;-1.8331474e27;-7.1608877e24::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('-1.1144502e28', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll('90', gg.TYPE_FLOAT)
+gg.toast("聚点已部署")
+end
+
+function h()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-511703038;-511697919;-509607930::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-511,703,038", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("1090519040", gg.TYPE_DWORD)
+gg.toast("强力自瞄开启成功")
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-301790704;-509607933;-298632638::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-301790704", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.toast("全图自瞄开启成功")
+end
+
+function i()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultCount()
+gg.searchNumber("23;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("145", gg.TYPE_FLOAT)
+gg.toast("范围开启成功")
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("9.3713598e-38;0.0001;0.00999999999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResultCount()
+gg.searchNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("60", gg.TYPE_FLOAT)
+gg.toast("真伤范围") 
+end
+
+function j()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-6.1526231e27;-1.0070975e28;::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("-6.1526231e27", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.toast("加速防拉开启成功")
+end
+
+function k()
+gg.clearResults()
+   gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS) 
+  gg.searchNumber("30000~120000;2D~3D;1034818683D~1036831949D::32", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("30000~99000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(100)
+  gg.editAll("40000", gg.TYPE_FLOAT)
+  gg.toast("全枪伤害开启成功")
+end
+
+function l()
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("1024",16)
+resultCounts=gg.getResultsCount()
+results=gg.getResults(resultCounts)
+for i=1,resultCounts do
+values={}
+values[1]={}
+values[1].address=results[i].address-4
+values[1].flags=16
+values=gg.getValues(values)
+if values[1].value==5000.0 then
+values={}
+values[1]={}
+values[1].address=results[i].address-8
+values[1].flags=16
+values=gg.getValues(values)
+if values[1].value==3000.0 then
+values={}
+values[1]={}
+values[1].address=results[i].address-12
+values[1].flags=16
+values=gg.getValues(values)
+if values[1].value==0.5 then
+setvalues={}
+setvalues[1]={}
+setvalues[1].address=results[i].address
+setvalues[1].flags=16
+setvalues[1].value=999999
+setvalues[2]={}
+setvalues[2].address=results[i].address-4
+setvalues[2].flags=16
+setvalues[2].value=999999
+setvalues[3]={}
+setvalues[3].address=results[i].address-8
+setvalues[3].flags=16
+setvalues[3].value=999999
+setvalues[4]={}
+setvalues[4].address=results[i].address-12
+setvalues[4].flags=16
+setvalues[4].value=999999
+gg.setValues(setvalues)
+gg.toast("一秒落地")
+end
+end
+end
+end
+
+end
+
+
+function m()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("90;87.27782440186F;-100.91194152832F;1F::13", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("90F;87.27782440186F;1F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(6)
+gg.editAll("1.96875;1.96875;999;1.96875;1.96875;999", gg.TYPE_FLOAT)  
+gg.toast("天线")
+end
+
+function n()
+gg.clearResults()    
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("2.8025969e-45;220;25;178;15;100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("220", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("700", gg.TYPE_FLOAT)
+gg.toast("上帝视角开启成功")
+end
+
+function o()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("23;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(10)
+gg.editAll("11", gg.TYPE_FLOAT)
+gg.toast("范围开启成功")
+end
+
+function Exit()
+   print("祝君奔放愉快")
+  os.exit()
+end
+
+
+
+
+cs = "奔放"
+while true do
+  if gg.isVisible(true) then
+    XGCK = 1
+    gg.setVisible(false)
+  end
+  gg.clearResults()
+  if XGCK == 1 then
+    Main()
+  end
+end
